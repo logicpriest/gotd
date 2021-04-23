@@ -13,7 +13,7 @@ async def on_message(message):
     if message.author == client.user:
         return
     
-    if message.content.startswith('$gender'):
+    if message.content.startswith('/genderroll'):
         def random_line(fname):
             lines = open(fname).read().splitlines()
             return random.choice(lines)
